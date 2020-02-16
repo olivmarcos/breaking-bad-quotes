@@ -74,7 +74,7 @@ export default {
     return {
       info: [],
       leftDrawerOpen: false,
-      lorem: 'hahaha',
+      timer: '',
       essentialLinks: [
         {
           title: 'Github',
@@ -97,8 +97,19 @@ export default {
       ]
     }
   },
-  mounted () {
-    axios.get('https://breaking-bad-quotes.herokuapp.com/v1/quotes').then(response => (this.info = response.data))
+  created () {
+    this.timer = setInterval(this.fetchEvent, 5000)
+  },
+  methods: {
+    fetchEvent () {
+      axios.get('https://breaking-bad-quotes.herokuapp.com/v1/quotes').then(response => (this.info = response.data))
+    }
+  },
+  cancelAutoUpdate () {
+    clearInterval(this.timer)
+  },
+  beforeDestroy () {
+    clearInterval(this.timer)
   }
 }
 </script>
