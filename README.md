@@ -1,26 +1,6 @@
-# Quasar App (app)
+# A Vuejs app using Quasar Framework
 
-A Quasar Framework app
+It's an simple app that I built just to have some introduction to Quasar and to learn how to use a api and also to learn more about VueJs.
 
-## Install the dependencies
-```bash
-yarn
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-### Lint the files
-```bash
-yarn run lint
-```
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+The API I used was found in this repo: https://github.com/public-apis/public-apis. It's a great source to built some stuffs. 
+The one I used to do this is this one: https://github.com/shevabam/breaking-bad-quotes.
