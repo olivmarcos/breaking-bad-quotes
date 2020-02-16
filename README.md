@@ -4,3 +4,6 @@ It's an simple app that I built just to have some introduction to Quasar and to 
 
 The API I used was found in this repo: https://github.com/public-apis/public-apis. It's a great source to built some stuffs. 
 The one I used to do this is this one: https://github.com/shevabam/breaking-bad-quotes.
+
+
+<img src="/images/bb-quotes.gif">
